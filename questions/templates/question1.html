@@ -1,0 +1,34 @@
+{% load static %}
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="{% static 'questions/style.css' %}">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1 id='question'>
+            Która z podanych baz danych <span id='nie'>nie jest</span> relacyjna?
+        </h1>
+
+        <img id='img1'
+        src="C:\Users\asus\quiz\static\img\imageq1.svg" 
+        alt="triangle with all three sides equal"
+        height="87"
+        width="100" />
+
+        <button id='odpowiedz1'>
+            PostgreSQL
+        </button>
+        <button id='odpowiedz2'>
+            MongoDB 
+        </button>
+        <button id='odpowiedz3'>
+            SQLite
+        </button>
+        <button id='odpowiedz4'>
+            MySQL
+        </button>
+
+    </body>
+</html>
