@@ -1,0 +1,49 @@
+{% load static %}
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="{% static 'questions/style.css' %}">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <h1 id='question'>
+            Czym jest relacja?
+        </h1>
+
+        <img id="img1"
+        src="{% static 'questions/imageq7.svg' %}"
+        alt="cool vector graphic"
+        height="230"
+        width="430"
+        x="0" y="100" />
+
+        <a href='{% url "question:correct_answear7" %}'>
+        <button id='odpowiedz1'>
+            zależnością między tabelami
+        </button>
+        </a>
+
+        <a href='{% url "question:incorrect_answear7" %}'>
+        <button id='odpowiedz2'>
+            wielkością rekordu
+        </button>
+        </a>
+
+        <a href='{% url "question:incorrect_answear7" %}'>
+        <button id='odpowiedz3'>
+             rozmiarem tabeli 
+        </button>
+        </a>
+
+        <a href='{% url "question:incorrect_answear7" %}'>
+        <button id='odpowiedz4'>
+             typem bazy dancyh 
+        </button>
+        </a>
+
+    </body>
+</html>

@@ -1,0 +1,52 @@
+{% load static %}
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="{% static 'questions/style.css' %}">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+        <style>
+#nie {
+    color: #b30c0c;
+    text-decoration: underline;
+}
+        </style>
+    </head>
+    <body>
+        <h1 id='question'>
+            Która relacja <span id='nie'>nie jest</span> relacją między tabelami bazy danych?
+        </h1>
+
+        <img id="img1"
+        src="{% static 'questions/imageq8.svg' %}"
+        alt="cool vector graphic"
+        height="230"
+        width="440"
+        x="0" y="100" />
+
+        <a href='{% url "question:incorrect_answear8" %}'>
+        <button id='odpowiedz1'>
+            Jeden-do-jednego 
+        </button>
+        </a>
+
+        <a href='{% url "question:incorrect_answear8" %}'>
+        <button id='odpowiedz2'>
+            Jeden-do-wielu
+        </button>
+        </a>
+
+        <a href='{% url "question:correct_answear8" %}'>
+        <button id='odpowiedz3'>
+             Relacja antagonistyczna
+        </button>
+        </a>
+
+        <a href='{% url "question:incorrect_answear8" %}'>
+        <button id='odpowiedz4'>
+            Wiele-do-wielu
+        </button>
+        </a>
+
+    </body>
+</html>

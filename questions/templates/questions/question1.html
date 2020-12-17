@@ -1,0 +1,51 @@
+{% load static %}
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="{% static 'questions/style.css' %}">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+        <style>
+            #span1 {
+                font-size: 16px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id='question'>
+            Czym jest tabela?
+        </h1>
+
+        <img id="img1"
+        src="{% static 'questions/imageq4.svg' %}"
+        alt="cool vector graphic"
+        height="200"
+        width="380"
+        x="0" y="100" />
+
+        <a href='{% url "question:correct_answear1" %}'>
+        <button id='odpowiedz1'>
+            <span id='span1'>uporządkowanym zbiorem danych</span>
+        </button>
+        </a>
+
+        <a href='{% url "question:incorrect_answear1" %}'>
+        <button id='odpowiedz2'>
+            <span id='span1'>nieuporządkowanym zbiorem danych</span>
+        </button>
+        </a>
+
+        <a href='{% url "question:incorrect_answear1" %}'>
+        <button id='odpowiedz3'>
+             listą w pythonie 
+        </button>
+        </a>
+
+        <a href='{% url "question:incorrect_answear1" %}'>
+        <button id='odpowiedz4'>
+             elementem rekordu 
+        </button>
+        </a>
+
+    </body>
+</html>

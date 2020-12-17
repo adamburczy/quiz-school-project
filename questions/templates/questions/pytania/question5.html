@@ -1,0 +1,51 @@
+{% load static %}
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="{% static 'questions/style.css' %}">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+        <style>
+             #span1 {
+                 font-size: 14px;
+             }
+        </style>
+    </head>
+    <body>
+        <h1 id='question'>
+            Co to formularz?
+        </h1>
+
+        <img id="img1"
+        src="{% static 'questions/imageq5.svg' %}"
+        alt="cool vector graphic"
+        height="230"
+        width="400"
+        x="0" y="100" />
+
+        <a href='{% url "question:incorrect_answear5" %}'>
+        <button id='odpowiedz1'>
+             usunięcie rekordu 
+        </button>
+        </a>
+
+        <a href='{% url "question:incorrect_answear5" %}'>
+        <button id='odpowiedz2'>
+            <span id='span1'>obiekt służący do zmiany czcionki na stronie</span>
+        </button>
+        </a>
+
+        <a href='{% url "question:incorrect_answear5" %}'>
+        <button id='odpowiedz3'>
+             prezentacja danych 
+        </button>
+        </a>
+
+        <a href='{% url "question:correct_answear5" %}'>
+        <button id='odpowiedz4'>
+             <span id='span1'>obiekt usprawniający wprowadzanie danych</span>
+        </button>
+        </a>
+
+    </body>
+</html>

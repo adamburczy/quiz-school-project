@@ -1,0 +1,49 @@
+{% load static %}
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="{% static 'questions/style.css' %}">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <h1 id='question'>
+            Czym jest raport?
+        </h1>
+
+        <img id="img1"
+        src="{% static 'questions/imageq10.svg' %}"
+        alt="cool vector graphic"
+        height="230"
+        width="420"
+        x="0" y="100" />
+
+        <a href='{% url "question:incorrect_answear9" %}'>
+        <button id='odpowiedz1'>
+              utworzeniem tabeli
+        </button>
+        </a>
+
+        <a href='{% url "question:correct_answear9" %}'>
+        <button id='odpowiedz2'>
+            prezentacją danych
+        </button>
+        </a>
+
+        <a href='{% url "question:incorrect_answear9" %}'>
+        <button id='odpowiedz3'>
+             edycją danych 
+        </button>
+        </a>
+
+        <a href='{% url "question:incorrect_answear9" %}'>
+        <button id='odpowiedz4'>
+             usunięciem danych 
+        </button>
+        </a>
+
+    </body>
+</html>

@@ -1,0 +1,49 @@
+{% load static %}
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="{% static 'questions/style.css' %}">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <h1 id='question'>
+            Która z podanych baz danych <span id='nie'>nie jest</span> relacyjna?
+        </h1>
+
+        <img id="img1"
+        src="{% static 'questions/imageq1.svg' %}"
+        alt="cool vector graphic"
+        height="230"
+        width="380"
+        x="0" y="100" />
+
+        <a href='{% url "question:incorrect_answear4" %}'>
+        <button id='odpowiedz1'>
+             PostgreSQL 
+        </button>
+        </a>
+
+        <a href='{% url "question:correct_answear4" %}'>
+        <button id='odpowiedz2'>
+            MongoDB
+        </button>
+        </a>
+
+        <a href='{% url "question:incorrect_answear4" %}'>
+        <button id='odpowiedz3'>
+             SQLite 
+        </button>
+        </a>
+
+        <a href='{% url "question:incorrect_answear4" %}'>
+        <button id='odpowiedz4'>
+             MySQL 
+        </button>
+        </a>
+
+    </body>
+</html>

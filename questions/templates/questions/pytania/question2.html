@@ -1,0 +1,51 @@
+{% load static %}
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="{% static 'questions/style.css' %}">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+        <style>
+             #span1 {
+                 font-size: 17px;
+             }
+        </style>
+    </head>
+    <body>
+        <h1 id='question'>
+            Czym jest sortowanie?
+        </h1>
+
+        <img id="img1"
+        src="{% static 'questions/imgq3.svg' %}"
+        alt="cool vector graphic"
+        height="200"
+        width="380"
+        x="0" y="100" />
+
+        <a href='{% url "question:incorrect_answear2" %}'>
+        <button id='odpowiedz1'>
+             usuwaniem danych 
+        </button>
+        </a>
+
+        <a href='{% url "question:incorrect_answear2" %}'>
+        <button id='odpowiedz2'>
+            tworzeniem funkcji
+        </button>
+        </a>
+
+        <a href='{% url "question:incorrect_answear2" %}'>
+        <button id='odpowiedz3'>
+            <span id='span1'>wprowadzaniem danych</span>
+        </button>
+        </a>
+
+        <a href='{% url "question:correct_answear2" %}'>
+        <button id='odpowiedz4'>
+            <span id=span1>porządkowaniem rekordów</span>
+        </button>
+        </a>
+
+    </body>
+</html>

@@ -1,0 +1,28 @@
+{% load static %}
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="{% static 'questions/style.css' %}">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+        <style>
+            h1 {
+                font-family: 'Libre Baskerville', serif;
+                color:  #06572e;
+                text-align: center;
+                position: relative;
+                top: 200px;
+            }
+            
+        </style>    </head>
+    
+<body>
+    <h1>Twój wynik to {{score}} /10</h1>
+    <a href="{% url 'question:try_again' %}">
+        <button id='rozpocznij'>Spróbuj jeszcze raz</button>
+        </a>
+</body>
+
+
